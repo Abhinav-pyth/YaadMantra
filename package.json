@@ -1,0 +1,22 @@
+{
+  "name": "yaadmantra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-like Hindi mnemonic learning platform built with Next.js, React, TypeScript, local JSON, CSS modules, and localStorage.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

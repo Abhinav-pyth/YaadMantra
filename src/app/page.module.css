@@ -1,0 +1,283 @@
+.homePage {
+  margin: 0 auto;
+  max-width: var(--container);
+  padding: 1rem;
+}
+
+.hero {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  padding: 3rem 0 1.5rem;
+}
+
+.heroContent {
+  animation: slideUp 260ms ease both;
+  display: grid;
+  gap: 1.15rem;
+  min-width: 0;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.05;
+  margin: 0;
+  max-width: 780px;
+  overflow-wrap: anywhere;
+}
+
+.hero h1 span {
+  color: var(--primary);
+  display: block;
+}
+
+.heroContent > p {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 680px;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.statsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.heroPanel {
+  animation: slideUp 360ms ease both;
+  background:
+    linear-gradient(160deg, rgba(15, 155, 142, 0.14), transparent 42%),
+    var(--surface-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1.1rem;
+}
+
+.heroPanelTop {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.85rem;
+  font-weight: 850;
+  justify-content: space-between;
+}
+
+.brandGlyph {
+  align-items: center;
+  background: var(--text);
+  border-radius: 8px;
+  color: var(--background);
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  width: 58px;
+}
+
+.heroPanel p {
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.55;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.heroPanel dl {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.heroPanel dl div {
+  align-items: center;
+  background: var(--surface-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.65rem;
+}
+
+.heroPanel dt {
+  align-items: center;
+  background: rgba(239, 106, 58, 0.13);
+  border-radius: 8px;
+  color: var(--primary);
+  display: inline-flex;
+  font-weight: 900;
+  height: 34px;
+  justify-content: center;
+  min-width: 34px;
+}
+
+.heroPanel dd {
+  color: var(--text-soft);
+  margin: 0;
+}
+
+.panelLink {
+  align-items: center;
+  color: var(--secondary);
+  display: inline-flex;
+  font-weight: 900;
+  gap: 0.4rem;
+}
+
+.section {
+  animation: fadeIn 240ms ease both;
+  padding: 2.25rem 0 0;
+}
+
+.sectionHeader {
+  align-items: flex-end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader h2 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin: 0.2rem 0 0;
+}
+
+.sectionHeader a,
+.sectionHeader span {
+  color: var(--secondary);
+  font-weight: 850;
+}
+
+.overline {
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.twoColumn {
+  display: grid;
+  gap: 1rem;
+}
+
+.quickPanel,
+.generatorPanel {
+  background: var(--surface-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1rem;
+}
+
+.quickGrid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.quickGrid a {
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.quickGrid a:hover {
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.quickGrid svg {
+  color: var(--primary);
+}
+
+.quickGrid span {
+  color: var(--muted);
+}
+
+.generatorPanel {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.generatorPanel label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.generatorPanel label span {
+  color: var(--text-soft);
+  font-weight: 850;
+}
+
+.generatorPanel textarea {
+  padding: 0.85rem;
+}
+
+.suggestionList {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.suggestionList button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  color: var(--text);
+  font-weight: 850;
+  line-height: 1.5;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+@media (min-width: 720px) {
+  .homePage {
+    padding: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .heroPanel {
+    padding: 1.3rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+    padding-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3.55rem;
+  }
+
+  .twoColumn {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}

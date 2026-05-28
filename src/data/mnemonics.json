@@ -1,0 +1,783 @@
+[
+  {
+    "id": "geo-neighbours-india",
+    "title": "भारत के पड़ोसी देश",
+    "mnemonic": "बहन अकेले चाय पीना ना, मैं भी हूँ",
+    "explanation": [
+      { "key": "ब", "value": "बांग्लादेश" },
+      { "key": "अ", "value": "अफ़गानिस्तान" },
+      { "key": "च", "value": "चीन" },
+      { "key": "प", "value": "पाकिस्तान" },
+      { "key": "न", "value": "नेपाल" },
+      { "key": "म", "value": "म्यांमार" },
+      { "key": "भ", "value": "भूटान" }
+    ],
+    "category": "Geography",
+    "difficulty": "Easy",
+    "keywords": ["भारत", "पड़ोसी", "देश", "map", "neighbors"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-continents",
+    "title": "सात महाद्वीप",
+    "mnemonic": "एशा अफ्रीका उत्तर-दक्षिण यूरोप ऑस्ट्रेलिया अंटार्कटिका याद करे",
+    "explanation": [
+      { "key": "एशा", "value": "एशिया" },
+      { "key": "अफ्रीका", "value": "अफ्रीका" },
+      { "key": "उत्तर", "value": "उत्तरी अमेरिका" },
+      { "key": "दक्षिण", "value": "दक्षिणी अमेरिका" },
+      { "key": "यूरोप", "value": "यूरोप" },
+      { "key": "ऑस्ट्रेलिया", "value": "ऑस्ट्रेलिया" },
+      { "key": "अंटार्कटिका", "value": "अंटार्कटिका" }
+    ],
+    "category": "Geography",
+    "difficulty": "Easy",
+    "keywords": ["महाद्वीप", "continent", "world"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-oceans",
+    "title": "पांच महासागर",
+    "mnemonic": "प्रशांत अटल बालक दक्षिण आर्कटिक गया",
+    "explanation": [
+      { "key": "प्रशांत", "value": "प्रशांत महासागर" },
+      { "key": "अटल", "value": "अटलांटिक महासागर" },
+      { "key": "बालक", "value": "हिंद महासागर" },
+      { "key": "दक्षिण", "value": "दक्षिणी महासागर" },
+      { "key": "आर्कटिक", "value": "आर्कटिक महासागर" }
+    ],
+    "category": "Geography",
+    "difficulty": "Easy",
+    "keywords": ["महासागर", "ocean", "world map"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-ganga-tributaries",
+    "title": "गंगा की प्रमुख सहायक नदियां",
+    "mnemonic": "यमुना रामू घाघरा गंडक कोसी सोन से मिली",
+    "explanation": [
+      { "key": "यमुना", "value": "यमुना" },
+      { "key": "रामू", "value": "रामगंगा" },
+      { "key": "घाघरा", "value": "घाघरा" },
+      { "key": "गंडक", "value": "गंडक" },
+      { "key": "कोसी", "value": "कोसी" },
+      { "key": "सोन", "value": "सोन" }
+    ],
+    "category": "Geography",
+    "difficulty": "Medium",
+    "keywords": ["गंगा", "नदी", "tributaries", "river"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-himalayan-ranges",
+    "title": "हिमालय की श्रेणियां",
+    "mnemonic": "शिव हिम महा ट्रांस चला",
+    "explanation": [
+      { "key": "शिव", "value": "शिवालिक" },
+      { "key": "हिम", "value": "हिमाचल या लघु हिमालय" },
+      { "key": "महा", "value": "महान हिमालय" },
+      { "key": "ट्रांस", "value": "ट्रांस हिमालय" }
+    ],
+    "category": "Geography",
+    "difficulty": "Medium",
+    "keywords": ["हिमालय", "mountains", "ranges"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-saarc",
+    "title": "सार्क के सदस्य",
+    "mnemonic": "भारत पाकिस्तान नेपाल भूटान बांग्ला श्रीलंका मालदीव अफ़गान",
+    "explanation": [
+      { "key": "भारत", "value": "भारत" },
+      { "key": "पाकिस्तान", "value": "पाकिस्तान" },
+      { "key": "नेपाल", "value": "नेपाल" },
+      { "key": "भूटान", "value": "भूटान" },
+      { "key": "बांग्ला", "value": "बांग्लादेश" },
+      { "key": "श्रीलंका", "value": "श्रीलंका" },
+      { "key": "मालदीव", "value": "मालदीव" },
+      { "key": "अफ़गान", "value": "अफ़गानिस्तान" }
+    ],
+    "category": "Geography",
+    "difficulty": "Easy",
+    "keywords": ["SAARC", "सार्क", "दक्षिण एशिया"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-indian-soils",
+    "title": "भारत की मुख्य मिट्टियां",
+    "mnemonic": "जलोढ़ काली लाल लैटराइट मरु पर्वत पीट",
+    "explanation": [
+      { "key": "जलोढ़", "value": "जलोढ़ मिट्टी" },
+      { "key": "काली", "value": "काली मिट्टी" },
+      { "key": "लाल", "value": "लाल मिट्टी" },
+      { "key": "लैटराइट", "value": "लैटराइट मिट्टी" },
+      { "key": "मरु", "value": "मरुस्थलीय मिट्टी" },
+      { "key": "पर्वत", "value": "पर्वतीय मिट्टी" },
+      { "key": "पीट", "value": "पीट और दलदली मिट्टी" }
+    ],
+    "category": "Geography",
+    "difficulty": "Medium",
+    "keywords": ["मिट्टी", "soil", "भारत"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-winds",
+    "title": "स्थायी पवनें",
+    "mnemonic": "व्यापारी पश्चिमी ध्रुवीय पवन चलती",
+    "explanation": [
+      { "key": "व्यापारी", "value": "व्यापारिक पवनें" },
+      { "key": "पश्चिमी", "value": "पश्चिमी पवनें" },
+      { "key": "ध्रुवीय", "value": "ध्रुवीय पवनें" }
+    ],
+    "category": "Geography",
+    "difficulty": "Easy",
+    "keywords": ["पवन", "winds", "climatology"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-plates",
+    "title": "मुख्य विवर्तनिक प्लेटें",
+    "mnemonic": "अफ्रीका अंटार्कटिका यूरेशिया इंडो ऑस्ट्रेलिया उत्तर-दक्षिण प्रशांत",
+    "explanation": [
+      { "key": "अफ्रीका", "value": "अफ्रीकी प्लेट" },
+      { "key": "अंटार्कटिका", "value": "अंटार्कटिक प्लेट" },
+      { "key": "यूरेशिया", "value": "यूरेशियन प्लेट" },
+      { "key": "इंडो", "value": "इंडो-ऑस्ट्रेलियन प्लेट" },
+      { "key": "उत्तर", "value": "उत्तरी अमेरिकी प्लेट" },
+      { "key": "दक्षिण", "value": "दक्षिणी अमेरिकी प्लेट" },
+      { "key": "प्रशांत", "value": "प्रशांत प्लेट" }
+    ],
+    "category": "Geography",
+    "difficulty": "Hard",
+    "keywords": ["plate tectonics", "प्लेट", "भूकंप"],
+    "source": "starter"
+  },
+  {
+    "id": "geo-indian-states-coast",
+    "title": "भारत के तटीय राज्य याद रखें",
+    "mnemonic": "गुजरात महाराष्ट्र गोवा कर्नाटक केरल तमिल आंध्र ओडिशा बंगाल",
+    "explanation": [
+      { "key": "गुजरात", "value": "गुजरात" },
+      { "key": "महाराष्ट्र", "value": "महाराष्ट्र" },
+      { "key": "गोवा", "value": "गोवा" },
+      { "key": "कर्नाटक", "value": "कर्नाटक" },
+      { "key": "केरल", "value": "केरल" },
+      { "key": "तमिल", "value": "तमिलनाडु" },
+      { "key": "आंध्र", "value": "आंध्र प्रदेश" },
+      { "key": "ओडिशा", "value": "ओडिशा" },
+      { "key": "बंगाल", "value": "पश्चिम बंगाल" }
+    ],
+    "category": "Geography",
+    "difficulty": "Medium",
+    "keywords": ["coast", "तट", "state"],
+    "source": "starter"
+  },
+  {
+    "id": "science-planets",
+    "title": "सूर्य से ग्रहों का क्रम",
+    "mnemonic": "बुध शुक्र पृथ्वी मंगल बृहस्पति शनि अरुण वरुण",
+    "explanation": [
+      { "key": "बुध", "value": "Mercury" },
+      { "key": "शुक्र", "value": "Venus" },
+      { "key": "पृथ्वी", "value": "Earth" },
+      { "key": "मंगल", "value": "Mars" },
+      { "key": "बृहस्पति", "value": "Jupiter" },
+      { "key": "शनि", "value": "Saturn" },
+      { "key": "अरुण", "value": "Uranus" },
+      { "key": "वरुण", "value": "Neptune" }
+    ],
+    "category": "Science",
+    "difficulty": "Easy",
+    "keywords": ["planet", "ग्रह", "solar system"],
+    "source": "starter"
+  },
+  {
+    "id": "science-taxonomy",
+    "title": "जीव वर्गीकरण क्रम",
+    "mnemonic": "राजा कुल गण परिवार वंश जाति बोले",
+    "explanation": [
+      { "key": "राजा", "value": "Kingdom" },
+      { "key": "कुल", "value": "Phylum" },
+      { "key": "गण", "value": "Class" },
+      { "key": "परिवार", "value": "Order" },
+      { "key": "वंश", "value": "Family" },
+      { "key": "जाति", "value": "Genus" },
+      { "key": "बोले", "value": "Species" }
+    ],
+    "category": "Science",
+    "difficulty": "Medium",
+    "keywords": ["taxonomy", "biology", "classification"],
+    "source": "starter"
+  },
+  {
+    "id": "science-vitamins-fat",
+    "title": "वसा में घुलनशील विटामिन",
+    "mnemonic": "आंटी दीपिका ईश्वर के साथ",
+    "explanation": [
+      { "key": "आंटी", "value": "Vitamin A" },
+      { "key": "दीपिका", "value": "Vitamin D" },
+      { "key": "ईश्वर", "value": "Vitamin E" },
+      { "key": "के", "value": "Vitamin K" }
+    ],
+    "category": "Science",
+    "difficulty": "Easy",
+    "keywords": ["vitamin", "biology", "ADEK"],
+    "source": "starter"
+  },
+  {
+    "id": "science-electromagnetic-spectrum",
+    "title": "विद्युतचुंबकीय स्पेक्ट्रम",
+    "mnemonic": "रेडियो माइक्रो इन्फ्रा दृश्य अल्ट्रा एक्स गामा",
+    "explanation": [
+      { "key": "रेडियो", "value": "Radio waves" },
+      { "key": "माइक्रो", "value": "Microwaves" },
+      { "key": "इन्फ्रा", "value": "Infrared" },
+      { "key": "दृश्य", "value": "Visible light" },
+      { "key": "अल्ट्रा", "value": "Ultraviolet" },
+      { "key": "एक्स", "value": "X-rays" },
+      { "key": "गामा", "value": "Gamma rays" }
+    ],
+    "category": "Science",
+    "difficulty": "Medium",
+    "keywords": ["physics", "spectrum", "waves"],
+    "source": "starter"
+  },
+  {
+    "id": "science-si-prefixes",
+    "title": "SI prefixes बड़े से छोटे",
+    "mnemonic": "गीता मेले किलो हेक्टो डेका यूनिट डेसी सेंटी मिली",
+    "explanation": [
+      { "key": "गीता", "value": "Giga" },
+      { "key": "मेले", "value": "Mega" },
+      { "key": "किलो", "value": "Kilo" },
+      { "key": "हेक्टो", "value": "Hecto" },
+      { "key": "डेका", "value": "Deca" },
+      { "key": "यूनिट", "value": "Base unit" },
+      { "key": "डेसी", "value": "Deci" },
+      { "key": "सेंटी", "value": "Centi" },
+      { "key": "मिली", "value": "Milli" }
+    ],
+    "category": "Science",
+    "difficulty": "Hard",
+    "keywords": ["SI", "prefix", "physics", "units"],
+    "source": "starter"
+  },
+  {
+    "id": "science-blood-cells",
+    "title": "रक्त के घटक",
+    "mnemonic": "लाल सफेद प्लेट प्लाज्मा परिवार",
+    "explanation": [
+      { "key": "लाल", "value": "लाल रक्त कणिकाएं" },
+      { "key": "सफेद", "value": "श्वेत रक्त कणिकाएं" },
+      { "key": "प्लेट", "value": "प्लेटलेट्स" },
+      { "key": "प्लाज्मा", "value": "प्लाज्मा" }
+    ],
+    "category": "Science",
+    "difficulty": "Easy",
+    "keywords": ["blood", "biology", "रक्त"],
+    "source": "starter"
+  },
+  {
+    "id": "science-cell-organelles",
+    "title": "कोशिका अंगक",
+    "mnemonic": "नाभि माइटो गोल्गी राइबो लाइसो ईआर",
+    "explanation": [
+      { "key": "नाभि", "value": "Nucleus" },
+      { "key": "माइटो", "value": "Mitochondria" },
+      { "key": "गोल्गी", "value": "Golgi body" },
+      { "key": "राइबो", "value": "Ribosome" },
+      { "key": "लाइसो", "value": "Lysosome" },
+      { "key": "ईआर", "value": "Endoplasmic reticulum" }
+    ],
+    "category": "Science",
+    "difficulty": "Medium",
+    "keywords": ["cell", "biology", "organelle"],
+    "source": "starter"
+  },
+  {
+    "id": "science-newton-laws",
+    "title": "न्यूटन के नियम",
+    "mnemonic": "जड़ता बल-त्वरण क्रिया-प्रतिक्रिया",
+    "explanation": [
+      { "key": "जड़ता", "value": "पहला नियम" },
+      { "key": "बल-त्वरण", "value": "दूसरा नियम" },
+      { "key": "क्रिया-प्रतिक्रिया", "value": "तीसरा नियम" }
+    ],
+    "category": "Science",
+    "difficulty": "Easy",
+    "keywords": ["physics", "Newton", "laws"],
+    "source": "starter"
+  },
+  {
+    "id": "science-kingdoms",
+    "title": "पांच जगत",
+    "mnemonic": "मोनेरा प्रोटिस्टा कवक पादप प्राणी",
+    "explanation": [
+      { "key": "मोनेरा", "value": "Monera" },
+      { "key": "प्रोटिस्टा", "value": "Protista" },
+      { "key": "कवक", "value": "Fungi" },
+      { "key": "पादप", "value": "Plantae" },
+      { "key": "प्राणी", "value": "Animalia" }
+    ],
+    "category": "Science",
+    "difficulty": "Medium",
+    "keywords": ["biology", "kingdom", "classification"],
+    "source": "starter"
+  },
+  {
+    "id": "science-human-senses",
+    "title": "पांच इंद्रियां",
+    "mnemonic": "आंख कान नाक जीभ त्वचा",
+    "explanation": [
+      { "key": "आंख", "value": "देखना" },
+      { "key": "कान", "value": "सुनना" },
+      { "key": "नाक", "value": "सूंघना" },
+      { "key": "जीभ", "value": "स्वाद" },
+      { "key": "त्वचा", "value": "स्पर्श" }
+    ],
+    "category": "Science",
+    "difficulty": "Easy",
+    "keywords": ["senses", "biology", "human body"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-solid",
+    "title": "SOLID principles",
+    "mnemonic": "सीमा ओढ़नी लेकर इंटरव्यू देने गई",
+    "explanation": [
+      { "key": "सीमा", "value": "Single Responsibility" },
+      { "key": "ओढ़नी", "value": "Open Closed" },
+      { "key": "लेकर", "value": "Liskov Substitution" },
+      { "key": "इंटरव्यू", "value": "Interface Segregation" },
+      { "key": "देने", "value": "Dependency Inversion" }
+    ],
+    "category": "Coding",
+    "difficulty": "Medium",
+    "keywords": ["SOLID", "design principles", "oop"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-acid",
+    "title": "ACID properties",
+    "mnemonic": "अच्छा कॉपी इंसान टिकाऊ",
+    "explanation": [
+      { "key": "अच्छा", "value": "Atomicity" },
+      { "key": "कॉपी", "value": "Consistency" },
+      { "key": "इंसान", "value": "Isolation" },
+      { "key": "टिकाऊ", "value": "Durability" }
+    ],
+    "category": "Coding",
+    "difficulty": "Easy",
+    "keywords": ["database", "ACID", "transaction"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-http-methods",
+    "title": "HTTP methods",
+    "mnemonic": "गेट पोस्ट पुट पैच डिलीट सर",
+    "explanation": [
+      { "key": "गेट", "value": "GET" },
+      { "key": "पोस्ट", "value": "POST" },
+      { "key": "पुट", "value": "PUT" },
+      { "key": "पैच", "value": "PATCH" },
+      { "key": "डिलीट", "value": "DELETE" }
+    ],
+    "category": "Coding",
+    "difficulty": "Easy",
+    "keywords": ["HTTP", "REST", "web"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-oop-pillars",
+    "title": "OOP pillars",
+    "mnemonic": "अभय एनक्लोज पाली इनहेरिट करे",
+    "explanation": [
+      { "key": "अभय", "value": "Abstraction" },
+      { "key": "एनक्लोज", "value": "Encapsulation" },
+      { "key": "पाली", "value": "Polymorphism" },
+      { "key": "इनहेरिट", "value": "Inheritance" }
+    ],
+    "category": "Coding",
+    "difficulty": "Easy",
+    "keywords": ["OOP", "object oriented", "class"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-big-o",
+    "title": "Big O common order",
+    "mnemonic": "वन लॉग एन एनलॉग एनस्क्वेयर एक्सपोनेंशियल",
+    "explanation": [
+      { "key": "वन", "value": "O(1)" },
+      { "key": "लॉग", "value": "O(log n)" },
+      { "key": "एन", "value": "O(n)" },
+      { "key": "एनलॉग", "value": "O(n log n)" },
+      { "key": "एनस्क्वेयर", "value": "O(n²)" },
+      { "key": "एक्सपोनेंशियल", "value": "O(2^n)" }
+    ],
+    "category": "Coding",
+    "difficulty": "Hard",
+    "keywords": ["algorithm", "complexity", "big o"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-sql-joins",
+    "title": "SQL joins",
+    "mnemonic": "इनर लेफ्ट राइट फुल क्रॉस मिला",
+    "explanation": [
+      { "key": "इनर", "value": "INNER JOIN" },
+      { "key": "लेफ्ट", "value": "LEFT JOIN" },
+      { "key": "राइट", "value": "RIGHT JOIN" },
+      { "key": "फुल", "value": "FULL JOIN" },
+      { "key": "क्रॉस", "value": "CROSS JOIN" }
+    ],
+    "category": "Coding",
+    "difficulty": "Medium",
+    "keywords": ["SQL", "database", "join"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-git-flow",
+    "title": "Git basic flow",
+    "mnemonic": "क्लोन ब्रांच ऐड कमिट पुश पुल",
+    "explanation": [
+      { "key": "क्लोन", "value": "clone" },
+      { "key": "ब्रांच", "value": "branch" },
+      { "key": "ऐड", "value": "add" },
+      { "key": "कमिट", "value": "commit" },
+      { "key": "पुश", "value": "push" },
+      { "key": "पुल", "value": "pull" }
+    ],
+    "category": "Coding",
+    "difficulty": "Easy",
+    "keywords": ["git", "version control", "workflow"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-css-box-model",
+    "title": "CSS box model",
+    "mnemonic": "कंटेंट पैडिंग बॉर्डर मार्जिन",
+    "explanation": [
+      { "key": "कंटेंट", "value": "Content" },
+      { "key": "पैडिंग", "value": "Padding" },
+      { "key": "बॉर्डर", "value": "Border" },
+      { "key": "मार्जिन", "value": "Margin" }
+    ],
+    "category": "Coding",
+    "difficulty": "Easy",
+    "keywords": ["CSS", "box model", "frontend"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-react-hooks",
+    "title": "React core hooks",
+    "mnemonic": "स्टेट इफेक्ट मेमो रेफ कॉलबैक",
+    "explanation": [
+      { "key": "स्टेट", "value": "useState" },
+      { "key": "इफेक्ट", "value": "useEffect" },
+      { "key": "मेमो", "value": "useMemo" },
+      { "key": "रेफ", "value": "useRef" },
+      { "key": "कॉलबैक", "value": "useCallback" }
+    ],
+    "category": "Coding",
+    "difficulty": "Medium",
+    "keywords": ["React", "hooks", "frontend"],
+    "source": "starter"
+  },
+  {
+    "id": "coding-rest",
+    "title": "REST constraints",
+    "mnemonic": "क्लाइंट स्टेट कैश यूनिफॉर्म लेयर कोड",
+    "explanation": [
+      { "key": "क्लाइंट", "value": "Client-server" },
+      { "key": "स्टेट", "value": "Stateless" },
+      { "key": "कैश", "value": "Cacheable" },
+      { "key": "यूनिफॉर्म", "value": "Uniform interface" },
+      { "key": "लेयर", "value": "Layered system" },
+      { "key": "कोड", "value": "Code on demand" }
+    ],
+    "category": "Coding",
+    "difficulty": "Hard",
+    "keywords": ["REST", "API", "architecture"],
+    "source": "starter"
+  },
+  {
+    "id": "history-mughal-order",
+    "title": "मुगल शासकों का क्रम",
+    "mnemonic": "बाबर हुमायूं अकबर जहांगीर शाहजहां औरंगज़ेब",
+    "explanation": [
+      { "key": "बाबर", "value": "बाबर" },
+      { "key": "हुमायूं", "value": "हुमायूं" },
+      { "key": "अकबर", "value": "अकबर" },
+      { "key": "जहांगीर", "value": "जहांगीर" },
+      { "key": "शाहजहां", "value": "शाहजहां" },
+      { "key": "औरंगज़ेब", "value": "औरंगज़ेब" }
+    ],
+    "category": "History",
+    "difficulty": "Easy",
+    "keywords": ["मुगल", "history", "rulers"],
+    "source": "starter"
+  },
+  {
+    "id": "history-national-movements",
+    "title": "मुख्य राष्ट्रीय आंदोलन",
+    "mnemonic": "असहयोग सविनय भारत छोड़ो आजादी",
+    "explanation": [
+      { "key": "असहयोग", "value": "असहयोग आंदोलन" },
+      { "key": "सविनय", "value": "सविनय अवज्ञा आंदोलन" },
+      { "key": "भारत छोड़ो", "value": "भारत छोड़ो आंदोलन" },
+      { "key": "आजादी", "value": "स्वतंत्रता" }
+    ],
+    "category": "History",
+    "difficulty": "Medium",
+    "keywords": ["freedom movement", "history", "गांधी"],
+    "source": "starter"
+  },
+  {
+    "id": "history-delhi-sultanate",
+    "title": "दिल्ली सल्तनत वंश",
+    "mnemonic": "गुलाम खिलजी तुगलक सैयद लोदी",
+    "explanation": [
+      { "key": "गुलाम", "value": "गुलाम वंश" },
+      { "key": "खिलजी", "value": "खिलजी वंश" },
+      { "key": "तुगलक", "value": "तुगलक वंश" },
+      { "key": "सैयद", "value": "सैयद वंश" },
+      { "key": "लोदी", "value": "लोदी वंश" }
+    ],
+    "category": "History",
+    "difficulty": "Easy",
+    "keywords": ["दिल्ली सल्तनत", "dynasty", "medieval"],
+    "source": "starter"
+  },
+  {
+    "id": "history-buddhist-councils",
+    "title": "बौद्ध संगीति स्थल",
+    "mnemonic": "राजगृह वैशाली पाटलिपुत्र कश्मीर",
+    "explanation": [
+      { "key": "राजगृह", "value": "प्रथम बौद्ध संगीति" },
+      { "key": "वैशाली", "value": "द्वितीय बौद्ध संगीति" },
+      { "key": "पाटलिपुत्र", "value": "तृतीय बौद्ध संगीति" },
+      { "key": "कश्मीर", "value": "चतुर्थ बौद्ध संगीति" }
+    ],
+    "category": "History",
+    "difficulty": "Hard",
+    "keywords": ["बौद्ध", "council", "ancient history"],
+    "source": "starter"
+  },
+  {
+    "id": "history-vedic-texts",
+    "title": "चार वेद",
+    "mnemonic": "ऋग साम यजुर अथर्व",
+    "explanation": [
+      { "key": "ऋग", "value": "ऋग्वेद" },
+      { "key": "साम", "value": "सामवेद" },
+      { "key": "यजुर", "value": "यजुर्वेद" },
+      { "key": "अथर्व", "value": "अथर्ववेद" }
+    ],
+    "category": "History",
+    "difficulty": "Easy",
+    "keywords": ["वेद", "ancient", "history"],
+    "source": "starter"
+  },
+  {
+    "id": "upsc-fundamental-rights",
+    "title": "मौलिक अधिकार",
+    "mnemonic": "समान स्वतंत्र शोषण धर्म संस्कृति संवैधानिक",
+    "explanation": [
+      { "key": "समान", "value": "समानता का अधिकार" },
+      { "key": "स्वतंत्र", "value": "स्वतंत्रता का अधिकार" },
+      { "key": "शोषण", "value": "शोषण के विरुद्ध अधिकार" },
+      { "key": "धर्म", "value": "धर्म की स्वतंत्रता" },
+      { "key": "संस्कृति", "value": "सांस्कृतिक और शैक्षिक अधिकार" },
+      { "key": "संवैधानिक", "value": "संवैधानिक उपचार" }
+    ],
+    "category": "UPSC",
+    "difficulty": "Medium",
+    "keywords": ["constitution", "polity", "rights"],
+    "source": "starter"
+  },
+  {
+    "id": "upsc-preamble",
+    "title": "प्रस्तावना के आदर्श",
+    "mnemonic": "न्याय स्वतंत्रता समानता बंधुता",
+    "explanation": [
+      { "key": "न्याय", "value": "सामाजिक, आर्थिक, राजनीतिक न्याय" },
+      { "key": "स्वतंत्रता", "value": "विचार, अभिव्यक्ति, विश्वास की स्वतंत्रता" },
+      { "key": "समानता", "value": "अवसर और स्थिति की समानता" },
+      { "key": "बंधुता", "value": "व्यक्ति की गरिमा और राष्ट्र की एकता" }
+    ],
+    "category": "UPSC",
+    "difficulty": "Easy",
+    "keywords": ["preamble", "constitution", "upsc"],
+    "source": "starter"
+  },
+  {
+    "id": "upsc-planning-sectors",
+    "title": "अर्थव्यवस्था के क्षेत्र",
+    "mnemonic": "प्राथमिक द्वितीय तृतीय चतुर्थ पंचम",
+    "explanation": [
+      { "key": "प्राथमिक", "value": "Primary sector" },
+      { "key": "द्वितीय", "value": "Secondary sector" },
+      { "key": "तृतीय", "value": "Tertiary sector" },
+      { "key": "चतुर्थ", "value": "Quaternary sector" },
+      { "key": "पंचम", "value": "Quinary sector" }
+    ],
+    "category": "UPSC",
+    "difficulty": "Medium",
+    "keywords": ["economy", "sectors", "UPSC"],
+    "source": "starter"
+  },
+  {
+    "id": "ssc-trig-values",
+    "title": "त्रिकोणमिति 0 से 90 संकेत",
+    "mnemonic": "शून्य आधा मूल-दो आधा मूल-तीन एक",
+    "explanation": [
+      { "key": "शून्य", "value": "sin 0°" },
+      { "key": "आधा", "value": "sin 30°" },
+      { "key": "मूल-दो", "value": "sin 45°" },
+      { "key": "मूल-तीन", "value": "sin 60°" },
+      { "key": "एक", "value": "sin 90°" }
+    ],
+    "category": "SSC",
+    "difficulty": "Medium",
+    "keywords": ["SSC", "math", "trigonometry"],
+    "source": "starter"
+  },
+  {
+    "id": "ssc-bodmas",
+    "title": "BODMAS क्रम",
+    "mnemonic": "ब्रैकेट ऑर्डर डिवाइड मल्टिप्लाई ऐड सब",
+    "explanation": [
+      { "key": "ब्रैकेट", "value": "Brackets" },
+      { "key": "ऑर्डर", "value": "Orders" },
+      { "key": "डिवाइड", "value": "Division" },
+      { "key": "मल्टिप्लाई", "value": "Multiplication" },
+      { "key": "ऐड", "value": "Addition" },
+      { "key": "सब", "value": "Subtraction" }
+    ],
+    "category": "SSC",
+    "difficulty": "Easy",
+    "keywords": ["math", "BODMAS", "SSC"],
+    "source": "starter"
+  },
+  {
+    "id": "java-jvm-parts",
+    "title": "JVM के मुख्य भाग",
+    "mnemonic": "लोडर मेमोरी इंजन नेटिव",
+    "explanation": [
+      { "key": "लोडर", "value": "Class Loader" },
+      { "key": "मेमोरी", "value": "Runtime Data Area" },
+      { "key": "इंजन", "value": "Execution Engine" },
+      { "key": "नेटिव", "value": "Native Interface" }
+    ],
+    "category": "Java Interview",
+    "difficulty": "Medium",
+    "keywords": ["Java", "JVM", "interview"],
+    "source": "starter"
+  },
+  {
+    "id": "java-access-modifiers",
+    "title": "Java access modifiers",
+    "mnemonic": "प्राइवेट डिफॉल्ट प्रोटेक्टेड पब्लिक",
+    "explanation": [
+      { "key": "प्राइवेट", "value": "private" },
+      { "key": "डिफॉल्ट", "value": "default" },
+      { "key": "प्रोटेक्टेड", "value": "protected" },
+      { "key": "पब्लिक", "value": "public" }
+    ],
+    "category": "Java Interview",
+    "difficulty": "Easy",
+    "keywords": ["Java", "access", "OOP"],
+    "source": "starter"
+  },
+  {
+    "id": "java-collections",
+    "title": "Java collections family",
+    "mnemonic": "लिस्ट सेट क्यू मैप",
+    "explanation": [
+      { "key": "लिस्ट", "value": "List" },
+      { "key": "सेट", "value": "Set" },
+      { "key": "क्यू", "value": "Queue" },
+      { "key": "मैप", "value": "Map" }
+    ],
+    "category": "Java Interview",
+    "difficulty": "Easy",
+    "keywords": ["Java", "collections", "interview"],
+    "source": "starter"
+  },
+  {
+    "id": "java-exception-types",
+    "title": "Exception hierarchy",
+    "mnemonic": "थ्रोएबल एरर एक्सेप्शन रनटाइम",
+    "explanation": [
+      { "key": "थ्रोएबल", "value": "Throwable" },
+      { "key": "एरर", "value": "Error" },
+      { "key": "एक्सेप्शन", "value": "Exception" },
+      { "key": "रनटाइम", "value": "RuntimeException" }
+    ],
+    "category": "Java Interview",
+    "difficulty": "Medium",
+    "keywords": ["Java", "exception", "interview"],
+    "source": "starter"
+  },
+  {
+    "id": "java-thread-states",
+    "title": "Thread states",
+    "mnemonic": "न्यू रननेबल ब्लॉक्ड वेटिंग टाइम्ड टर्मिनेटेड",
+    "explanation": [
+      { "key": "न्यू", "value": "NEW" },
+      { "key": "रननेबल", "value": "RUNNABLE" },
+      { "key": "ब्लॉक्ड", "value": "BLOCKED" },
+      { "key": "वेटिंग", "value": "WAITING" },
+      { "key": "टाइम्ड", "value": "TIMED_WAITING" },
+      { "key": "टर्मिनेटेड", "value": "TERMINATED" }
+    ],
+    "category": "Java Interview",
+    "difficulty": "Hard",
+    "keywords": ["Java", "thread", "concurrency"],
+    "source": "starter"
+  },
+  {
+    "id": "english-prefix-negative",
+    "title": "Negative prefixes",
+    "mnemonic": "अन इन इम डिस नॉन",
+    "explanation": [
+      { "key": "अन", "value": "un-" },
+      { "key": "इन", "value": "in-" },
+      { "key": "इम", "value": "im-" },
+      { "key": "डिस", "value": "dis-" },
+      { "key": "नॉन", "value": "non-" }
+    ],
+    "category": "English Vocabulary",
+    "difficulty": "Easy",
+    "keywords": ["English", "prefix", "vocabulary"],
+    "source": "starter"
+  },
+  {
+    "id": "english-word-roots",
+    "title": "Common word roots",
+    "mnemonic": "बायो जीवन जियो पृथ्वी फोन ध्वनि",
+    "explanation": [
+      { "key": "बायो", "value": "bio = life" },
+      { "key": "जियो", "value": "geo = earth" },
+      { "key": "फोन", "value": "phon = sound" },
+      { "key": "ग्राफ", "value": "graph = write" }
+    ],
+    "category": "English Vocabulary",
+    "difficulty": "Medium",
+    "keywords": ["English", "roots", "vocabulary"],
+    "source": "starter"
+  },
+  {
+    "id": "english-confusing-words",
+    "title": "Affect और Effect",
+    "mnemonic": "असर डालना Affect, असर दिखना Effect",
+    "explanation": [
+      { "key": "Affect", "value": "verb: प्रभाव डालना" },
+      { "key": "Effect", "value": "noun: प्रभाव या परिणाम" }
+    ],
+    "category": "English Vocabulary",
+    "difficulty": "Easy",
+    "keywords": ["English", "grammar", "confusing words"],
+    "source": "starter"
+  }
+]

@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+tsconfig.tsbuildinfo
+
+# Local QA/browser artifacts
+.chrome-*/
+qa-*.png
+qa-cdp.mjs
+
+# Environment files
+.env*
+!.env.example
