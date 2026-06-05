@@ -174,20 +174,36 @@ export function HomeClient({ starterMnemonics, trendingMnemonics, categories, to
         <div className={styles.generatorPanel}>
           <div className={styles.sectionHeader}>
             <div>
-              <p className={styles.overline}>Local Generator</p>
-              <h2>AI-like, API-free</h2>
+              <p className={styles.overline}>AI Generator</p>
+              <h2>Minimax M3 Powered</h2>
             </div>
           </div>
           <label>
             <span>Comma-separated words</span>
             <textarea value={generatorInput} onChange={(event) => setGeneratorInput(event.target.value)} />
           </label>
-          <button className="buttonPrimary" onClick={handleGenerate} type="button">
-            <Icon name="sparkles" /> Generate suggestions
+          <button className="buttonPrimary" onClick={handleGenerate} type="button" disabled={isGenerating}>
+            <Icon name="sparkles" /> {isGenerating ? "Generating..." : "Generate with AI"}
           </button>
-          {suggestions.length ? (
+          {suggestions.length || isGenerating ? (
             <div className={styles.suggestionList}>
-              {suggestions.map((suggestion) => (
+              {isGenerating ? (
+                <p style={{ opacity: 0.6 }}>AI is thinking...</p>
+              ) : (
+                suggestions.map((suggestion) => (
+                  <button key={suggestion.id} onClick={() => copySuggestion(suggestion.sentence)} type="button">
+                    {suggestion.sentence}
+                  </button>
+                ))
+              )}
+            </div>
+          ) : null}
+        </div>
+      </section>
+    </div>
+  );
+}
+        {suggestions.map((suggestion) => (
                 <button key={suggestion.id} onClick={() => copySuggestion(suggestion.sentence)} type="button">
                   {suggestion.sentence}
                 </button>

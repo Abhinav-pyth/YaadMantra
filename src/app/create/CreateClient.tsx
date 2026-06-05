@@ -7,6 +7,7 @@ import { MnemonicCard } from "@/components/MnemonicCard";
 import { showToast } from "@/components/Toast";
 import { categories, categoryNames } from "@/data/categories";
 import { useCustomMnemonics } from "@/hooks/useCustomMnemonics";
+import { generateWithAi } from "@/utils/ai";
 import { explanationToText, generateMnemonicSuggestions, textToExplanation } from "@/utils/mnemonicGenerator";
 import styles from "@/app/pages.module.css";
 import type { CategoryName, CustomMnemonic, Difficulty, GeneratedSuggestion } from "@/types/mnemonic";
@@ -36,6 +37,7 @@ export function CreateClient() {
   const [generatorInput, setGeneratorInput] = useState("Bangladesh, Afghanistan, China, Pakistan, Nepal, Myanmar, Bhutan");
   const [suggestions, setSuggestions] = useState<GeneratedSuggestion[]>([]);
   const [deleteTarget, setDeleteTarget] = useState<CustomMnemonic | null>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   const isValid = useMemo(
     () => form.title.trim() && form.mnemonic.trim() && textToExplanation(form.explanationText).length > 0,
@@ -95,14 +97,27 @@ export function CreateClient() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  function generateSuggestions() {
-    const nextSuggestions = generateMnemonicSuggestions(generatorInput);
-    setSuggestions(nextSuggestions);
-    showToast({
-      title: nextSuggestions.length ? "Generated" : "Need more words",
-      message: nextSuggestions.length ? "Pick a suggestion to prefill the form." : "कम से कम दो words डालें।",
-      type: nextSuggestions.length ? "success" : "warning"
-    });
+  async function generateSuggestions() {
+    const words = generatorInput.split(",").map(w => w.trim()).filter(Boolean);
+    if (words.length < 2) {
+      showToast({ title: "Need more words", message: "कम से कम दो words डालें।", type: "warning" });
+      return;
+    }
+
+    setIsGenerating(true);
+    try {
+      const nextSuggestions = await generateWithAi(words);
+      setSuggestions(nextSuggestions);
+      showToast({ title: "Generated", message: "AI ने mnemonics बना दिए हैं!", type: "success" });
+    } catch (error) {
+      console.error(error);
+      // Fallback to local generator if API fails
+      const nextSuggestions = generateMnemonicSuggestions(generatorInput);
+      setSuggestions(nextSuggestions);
+      showToast({ title: "Fallback", message: "AI fail हुआ, local generator use किया।", type: "info" });
+    } finally {
+      setIsGenerating(false);
+    }
   }
 
   function useSuggestion(suggestion: GeneratedSuggestion) {
@@ -207,23 +222,30 @@ export function CreateClient() {
         <aside className={styles.generatorBox}>
           <div className={styles.sectionHeader}>
             <div>
-              <p className={styles.overline}>Generator</p>
-              <h2>Local AI-like helper</h2>
+              <p className={styles.overline}>AI Generator</p>
+              <h2>Minimax M3 Helper</h2>
             </div>
           </div>
           <label>
             <span>Words</span>
             <textarea value={generatorInput} onChange={(event) => setGeneratorInput(event.target.value)} />
           </label>
-          <button className="buttonPrimary" onClick={generateSuggestions} type="button">
-            <Icon name="sparkles" /> Generate 3-5
+          <button className="buttonPrimary" onClick={generateSuggestions} type="button" disabled={isGenerating}>
+            <Icon name="sparkles" /> {isGenerating ? "Generating..." : "Generate with AI"}
           </button>
           <div className={styles.suggestionStack}>
-            {suggestions.map((suggestion) => (
-              <button key={suggestion.id} onClick={() => useSuggestion(suggestion)} type="button">
-                {suggestion.sentence}
-              </button>
-            ))}
+            {isGenerating ? (
+              <div className={styles.skeletonGrid}>
+                <span style={{ height: "40px" }} />
+                <span style={{ height: "40px" }} />
+              </div>
+            ) : (
+              suggestions.map((suggestion) => (
+                <button key={suggestion.id} onClick={() => useSuggestion(suggestion)} type="button">
+                  {suggestion.sentence}
+                </button>
+              ))
+            )}
           </div>
         </aside>
       </section>
@@ -265,6 +287,19 @@ export function CreateClient() {
 
       <Modal isOpen={Boolean(deleteTarget)} onClose={() => setDeleteTarget(null)} title="Delete mnemonic?">
         <p className={styles.modalText}>{deleteTarget?.title} हटाने के बाद वापस नहीं आएगा।</p>
+        <div className={styles.formActions}>
+          <button className={styles.dangerButton} onClick={confirmDelete} type="button">
+            Delete
+          </button>
+          <button className="buttonSecondary" onClick={() => setDeleteTarget(null)} type="button">
+            Cancel
+          </button>
+        </div>
+      </Modal>
+    </div>
+  );
+}
+�� के बाद वापस नहीं आएगा।</p>
         <div className={styles.formActions}>
           <button className={styles.dangerButton} onClick={confirmDelete} type="button">
             Delete
