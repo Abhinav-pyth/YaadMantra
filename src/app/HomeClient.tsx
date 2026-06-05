@@ -10,6 +10,7 @@ import { StatPill } from "@/components/StatPill";
 import { showToast } from "@/components/Toast";
 import { useCustomMnemonics } from "@/hooks/useCustomMnemonics";
 import { useStreak } from "@/hooks/useStreak";
+import { generateWithAi } from "@/utils/ai";
 import { generateMnemonicSuggestions } from "@/utils/mnemonicGenerator";
 import { searchMnemonics } from "@/utils/search";
 import styles from "@/app/page.module.css";
@@ -26,21 +27,33 @@ export function HomeClient({ starterMnemonics, trendingMnemonics, categories, to
   const [query, setQuery] = useState("");
   const [generatorInput, setGeneratorInput] = useState("Bangladesh, Afghanistan, China, Pakistan, Nepal, Myanmar, Bhutan");
   const [suggestions, setSuggestions] = useState<GeneratedSuggestion[]>([]);
+  const [isGenerating, setIsGenerating] = useState(false);
   const { customMnemonics } = useCustomMnemonics();
   const { streak } = useStreak();
 
   const allMnemonics = useMemo(() => [...starterMnemonics, ...customMnemonics], [customMnemonics, starterMnemonics]);
   const searchResults = useMemo(() => searchMnemonics(allMnemonics, query).slice(0, 9), [allMnemonics, query]);
 
-  function handleGenerate() {
-    const nextSuggestions = generateMnemonicSuggestions(generatorInput);
-    setSuggestions(nextSuggestions);
+  async function handleGenerate() {
+    const words = generatorInput.split(",").map(w => w.trim()).filter(Boolean);
+    if (words.length < 2) {
+      showToast({ title: "Need more words", message: "कम से कम दो words डालें।", type: "warning" });
+      return;
+    }
 
-    showToast({
-      title: nextSuggestions.length ? "Suggestions ready" : "Add more words",
-      message: nextSuggestions.length ? "Local generator ने नए Hindi-style मंत्र बनाए।" : "कम से कम दो comma-separated words डालें।",
-      type: nextSuggestions.length ? "success" : "warning"
-    });
+    setIsGenerating(true);
+    try {
+      const nextSuggestions = await generateWithAi(words);
+      setSuggestions(nextSuggestions);
+      showToast({ title: "AI Suggestions ready", message: "Minimax M3 ने नए Hindi मंत्र बनाए।", type: "success" });
+    } catch (error) {
+      console.error(error);
+      const nextSuggestions = generateMnemonicSuggestions(generatorInput);
+      setSuggestions(nextSuggestions);
+      showToast({ title: "Fallback ready", message: "Local generator ने मंत्र बनाए (AI offline)।", type: "info" });
+    } finally {
+      setIsGenerating(false);
+    }
   }
 
   async function copySuggestion(sentence: string) {
@@ -196,18 +209,6 @@ export function HomeClient({ starterMnemonics, trendingMnemonics, categories, to
                   </button>
                 ))
               )}
-            </div>
-          ) : null}
-        </div>
-      </section>
-    </div>
-  );
-}
-        {suggestions.map((suggestion) => (
-                <button key={suggestion.id} onClick={() => copySuggestion(suggestion.sentence)} type="button">
-                  {suggestion.sentence}
-                </button>
-              ))}
             </div>
           ) : null}
         </div>

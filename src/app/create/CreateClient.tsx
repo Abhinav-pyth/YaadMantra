@@ -299,16 +299,3 @@ export function CreateClient() {
     </div>
   );
 }
-�� के बाद वापस नहीं आएगा।</p>
-        <div className={styles.formActions}>
-          <button className={styles.dangerButton} onClick={confirmDelete} type="button">
-            Delete
-          </button>
-          <button className="buttonSecondary" onClick={() => setDeleteTarget(null)} type="button">
-            Cancel
-          </button>
-        </div>
-      </Modal>
-    </div>
-  );
-}
